@@ -1,0 +1,36 @@
+{
+  "name": "02-desafio-app-diet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "dev": "tsx watch src/server",
+    "build": "tsup src --out-dir build",
+    "eslint": "eslint src --ext .ts --fix",
+    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/luxon": "^3.3.2",
+    "@types/supertest": "^2.0.13",
+    "eslint": "^8.50.0",
+    "supertest": "^6.3.3",
+    "tsup": "^7.2.0",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.5"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.1.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.23.2",
+    "knex": "^2.5.1",
+    "luxon": "^3.4.3",
+    "sqlite3": "^5.1.6",
+    "zod": "^3.22.2"
+  },
+  "author": "henrique_frugoli@outlook.com"
+}
